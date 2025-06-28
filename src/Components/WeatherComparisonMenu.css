@@ -1,0 +1,211 @@
+.sunnyGif {
+  background-image: url('../Assets/images/Sunny.gif');
+}
+
+.cloudyGif {
+  background-image: url('../Assets/images/Cloudy.gif');
+}
+
+.rainGif {
+  background-image: url('../Assets/images/Rain.gif');
+}
+
+.snowGif {
+  background-image: url('../Assets/images/Snow.gif');
+}
+
+.thunderstormsGif {
+  background-image: url('../Assets/images/Thunderstroms.gif');
+}
+
+/* General Styling (border-box to automatically include padding and borders in sizing calculations) */
+* {
+  box-sizing: border-box;
+}
+
+/* Page Container Styling */
+#comparison-menu-container {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Header Styling */
+#comparison-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 15%;
+}
+
+#comparison-header {
+  padding: 1%;
+  font-size: 4vh;
+  font-weight: bold;
+  border-radius: 5px;
+  border-width: 2px; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+  background-color: var(--secondary1-color);
+  color: var(--text-dark-color);
+  box-shadow: 5px 5px 15px var(--shadow-color);
+}
+
+/* Column Container Styling */
+#comparison-column-container {
+  display: flex;
+  justify-content: space-around;
+  
+  width: 100%;
+  min-height: 80%;
+}
+
+/* Column Styling */
+#location-one-input-column,
+#location-two-input-column,
+#compare-statistics-column {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-around;
+  
+  width: 30%; 
+  min-height: 90%;
+  
+  object-fit: cover;
+  
+  border-Radius: 8px;
+  border-width: 2px; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+  
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* First and Second Column Element Styling: */
+/* Input Styling */
+.location-comparison-input {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-around;
+
+  width: 90%;
+  height: 10%;
+  padding: 4%;
+
+  background-color: var(--secondary1-color);
+
+  border-radius: 8px;
+  border-width: 2px; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+
+  box-shadow: 5px 5px 15px var(--shadow-color);
+}
+
+.location-comparison-input label {
+  width: 28%;
+
+  background-color: var(--page-color);
+  box-shadow: 5px 5px 15px var(--shadow-color);
+  border-radius: 5px;
+
+  padding: 1%;
+
+  color: var(--text-dark-color);
+  font-size: 1.5vh;
+  font-weight: bold;
+}
+
+.location-comparison-input input {
+  width: 68%;
+  
+  color: var(--text-dark-color);
+
+  background-color: var(--page-color);
+  box-shadow: 5px 5px 15px var(--shadow-color);
+  
+  border-radius: 4px;
+
+  padding: 1%;
+
+  border-width: 2px; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+}
+/* Response Styling */
+.weather-comparison-background {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-around;
+  
+  width: 90%;
+  height: 80%;
+
+  border-radius: 5px;
+  border-width: 2px; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+
+  box-shadow: 5px 5px 15px var(--shadow-color);
+}
+
+.text-comparison-background {
+  height: 80%;
+  padding: 3%;
+
+  background-Color: rgba(var(--page-rgb), .7); 
+  
+  border-width: 2px; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+  border-radius: 5px;
+}
+
+.h3-weather-comparison-header {
+  font-size: 2.5vh;
+  color: var(--text-dark-color);
+}
+
+.p-weather-comparison-statistics {
+  font-size: 2vh;
+  color: var(--text-dark-color);
+}
+
+.compare-button,
+.clear-compare-button {
+  width: 50%; 
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border-width: 2px; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+  background-color: var(--secondary1-color); 
+  color: var(--text-dark-color);
+  box-shadow: 0 5px 15px var(--shadow-color);
+  font-size: 2.5vh;
+  cursor: pointer;
+}
+
+.compare-button:hover,
+.clear-compare-button:hover {
+  background-color: var(--secondary2-color); 
+}
+
+.comparison-result {
+  width: 90%;
+  padding: 2%;
+
+  border-radius: 5px;
+  border-width: 2px; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+
+  background-color: var(--secondary1-color); 
+  color: var(--text-dark-color);
+
+  box-shadow: 5px 5px 15px var(--shadow-color);
+}

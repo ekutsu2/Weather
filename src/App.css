@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+  --primary1-color: #34495e; /* Used for: Button Background and Outlines */
+  --primary1-rgb: 52, 73, 94;  
+
+  --primary2-color: #2c3e50; /* Used for: Button Hover on primary1 colored buttons */
+  --primary2-rgb: 44, 62, 80; 
+
+  --secondary1-color: #9bb2b5; /* Used for: Background color on sidebar, header, and other elements */
+  --secondary1-rgb: 155, 178, 181;
+
+  --secondary2-color: #8aa5a8;  /* Used for: Hover on secondary1 color elements */
+  --secondary2-rgb: 138, 165, 168; 
+
+  --page-color: #ecf0f1; /* Used for: Content Page Background Color */
+  --page-rgb: 236, 240, 241;
+
+  --text-dark-color: #34495e; /* Same as primary1 but here for readability and incase we want to change it */
+  --text-dark-rgb: 52, 73, 94;
+
+  --text-light-color: #ecf0f1; /* Same as page-color but here for readability and incase we want to change it */
+  --text-light-rgb: 236, 240, 241;
+
+  --shadow-color: grey;
+  --shadow-rgb: 128, 128, 128;
+}
+
+.dark-theme {
+  --primary1-color: #9bb2b5; /* Used for: Button Background and Outlines */
+  --primary1-rgb: 155, 178, 181;
+
+  --primary2-color: #8aa5a8; /* Used for: Button Hover on primary1 colored buttons */
+  --primary2-rgb: 138, 165, 168;
+
+  --secondary1-color: #525252; /* Used for: Background color on sidebar, header, and other elements */
+  --secondary1-rgb: 82, 82, 82;
+
+  --secondary2-color: #696969; /* Used for: Hover on secondary1 color elements */
+  --secondary2-rgb: 105, 105, 105;
+
+  --page-color: #696969; /* Used for: Content Page Background Color */
+  --page-rgb: 105, 105, 105;
+
+  --text-dark-color: #ecf0f1; /* Same as primary1 but here for readability and incase we want to change it */
+  --text-dark-rgb: 236, 240, 241;
+
+  --text-light-color: #34495e; /* Same as page-color but here for readability and incase we want to change it */
+  --text-light-rgb: 52, 73, 94;
+
+  --shadow-color: black;
+  --shadow-rgb: 0, 0, 0;
+}
+
+/* App container styling */
+#app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  width: 100%;
+}
+
+/* Exit button and header bar styling */
+#top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+}
+
+/* exit button styling */
+#exit-button {
+  position: relative;
+  z-index: 3;
+  width: 12vh;
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary1-color); 
+}
+
+/* Header Bar styling */
+#header-bar {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary1-color); 
+}
+
+/* Content page and sidebar styling */
+#bottom-content-and-sidebar {
+  display: flex;
+  height: 88vh;
+}
+
+/* Sidebar styling */
+#side-bar {
+  position: relative;
+  z-index: 2;
+  width: 12vh;
+  background-color: var(--secondary1-color); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content page styling */
+#content-page {
+  position: relative;
+  z-index: 1; 
+  flex: 1;
+  background-color: var(--page-color); 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

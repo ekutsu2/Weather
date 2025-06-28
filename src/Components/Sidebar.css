@@ -1,0 +1,33 @@
+/* Side Bar Styling */
+#sidebar-Container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    height: 100%;
+    background-color: var(--secondary1-color); 
+    border-width: 0 2px 0 0; 
+    border-style: solid;
+    border-color: var(--primary1-color);
+    box-sizing: border-box;
+    object-fit: cover;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Button Styling */
+#sidebar-Container button {
+    width: 100%; 
+    padding: 10px;
+    margin: 10% 0; 
+    border: none;
+    background-color: var(--primary1-color); 
+    color: var(--text-light-color);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+/* Hover Color */
+#sidebar-Container button:hover {
+    background-color: var(--primary2-color);
+}
+  

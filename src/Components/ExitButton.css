@@ -1,0 +1,23 @@
+/* Style for exit button */
+#exit-button {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100%; 
+}
+
+.exit-logo {
+  width: auto; 
+  height: 100%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  border-width: 0 2px 2px 0; 
+  border-style: solid;
+  border-color: var(--primary1-color);
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.exit-logo:hover {
+  opacity: 0.7;
+}

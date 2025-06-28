@@ -1,0 +1,153 @@
+/* Styling for entire header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary1-color);
+    width: 100%;
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-width: 0 0 2px 0; 
+    border-style: solid;
+    border-color: var(--primary1-color);
+    box-sizing: border-box;
+    object-fit: cover;
+    box-shadow: 5px 0 15px var(--shadow-color);
+}
+
+/* Style for search bar container */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--page-color);
+    border-radius: 20px;
+    width: 30%;
+    position: relative;
+}
+
+/* Suggestions dropdown styling */
+.suggestions-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    background-color: var(--page-color);
+    border: 2px solid var(--primary1-color);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto;
+    margin-top: 5px;
+}
+
+.suggestions-section {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--secondary1-color);
+}
+
+.suggestions-section:last-child {
+    border-bottom: none;
+}
+
+.suggestions-header {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: var(--text-dark-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: var(--secondary1-color);
+}
+
+.suggestions-header svg {
+    margin-right: 8px;
+    color: var(--primary1-color);
+}
+
+.suggestions-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.suggestions-list li {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: var(--text-dark-color);
+    transition: background-color 0.2s ease;
+}
+
+.suggestions-list li:hover {
+    background-color: var(--secondary2-color);
+}
+
+/* Style for Input section of search bar */
+.search-input {
+    width: 100%;
+    border: none;
+    font-size: 2vh;
+    border-radius: 10px;
+    color: #34495e;
+}
+
+/* Style for the info icon */
+.info-icon {
+    cursor: pointer;
+    color: #34495e;
+    margin-right: 8px;
+}
+
+/* Style for the search icon */
+.search-icon {
+    cursor: pointer;
+    padding-right: 1%;
+    color: var(--text-dark-color);
+}
+
+/* Style for the search tooltip */
+.search-tooltip {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    color: #34495e;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 250px;
+    margin-top: 5px;
+}
+
+.search-tooltip p {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.search-tooltip ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.search-tooltip li {
+    margin: 3px 0;
+}
+
+/* Style for current weather conditions at your current location (Container) */
+/* Temporarily displays as london by default */
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    width: 60%;
+    font-size: 2.5vh;
+    gap: 10%;
+}
+
+/* Style for Weather info */
+.weather-location, .weather-description, .weather-temperature {
+    color: var(--text-dark-color);
+}

@@ -1,0 +1,42 @@
+{
+  "name": "weather_group_joseph",
+  "version": "1.0.0",
+  "description": "This is the repository for Weather_Group_Joseph's Weather Dashboard Project for Software Engineering 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"webpack serve --mode development\" \"python3.11 Backend/Main.py\"",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshHouse/Weather_Group_Joseph.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshHouse/Weather_Group_Joseph/issues"
+  },
+  "homepage": "https://github.com/JoshHouse/Weather_Group_Joseph#readme",
+  "dependencies": {
+    "@react-google-maps/api": "^2.20.6",
+    "axios": "^1.8.2",
+    "lucide-react": "^0.483.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^9.2.1",
+    "concurrently": "^9.1.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
